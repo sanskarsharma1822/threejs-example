@@ -678,7 +678,7 @@ function createTextSprite(text, position, fontSize) {
   return sprite;
 }
 
-planets = [];
+const planets = [];
 const planetData = [
   { name: "Mercury", radius: 3, texture: "avatar-1.png", speed: 0.018 },
   { name: "Moon", radius: 3.6, texture: "avatar-2.png", speed: 0.015 },
