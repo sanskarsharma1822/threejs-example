@@ -711,7 +711,8 @@ for (const data of planetData) {
     ? new THREE.TextureLoader().load(data.texture)
     : null;
   const planet = new THREE.Mesh(
-    new THREE.SphereGeometry(data.radius, 32, 32),
+    // new THREE.SphereGeometry(data.radius, 32, 32),
+    new THREE.PlaneGeometry(20, 20),
     new THREE.MeshStandardMaterial({
       map: planetTexture,
     })
