@@ -793,9 +793,9 @@ Array(8000).fill().forEach(addStar);
 
 function animate() {
   requestAnimationFrame(animate);
-  planets.forEach((planet) => {
-    planet.rotation.y += planet.speed;
-  });
+  // planets.forEach((planet) => {
+  //   planet.rotation.y += planet.speed;
+  // });
   controls.update();
   renderer.render(scene, camera);
 }
