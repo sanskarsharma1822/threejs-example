@@ -685,8 +685,8 @@ const planetData = [
   { name: "Earth", radius: 6.4, texture: "avatar-3.png", speed: 0.0125 },
 ];
 
-const dist_nameSprite = [5, 5, 5];
-const dist_textSprite = [5, 5, 5];
+const dist_nameSprite = [15, 15, 15];
+const dist_textSprite = [15, 15, 15];
 const dist_sizeSprite = [2, 2, 2];
 const font_name = [24, 24, 24];
 const font_text = [18, 18, 18];
