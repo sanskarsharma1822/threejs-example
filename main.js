@@ -692,18 +692,9 @@ const font_name = [24, 24, 24];
 const font_text = [18, 18, 18];
 const font_size = [14, 14, 14];
 const text_text = [
-  [
-    "Smallest Planet in the Solar System",
-    "But not really that small, it's about 1/3rd size of the Earth, so we are starting up at quite the size",
-  ],
-  [
-    "Recently, Scientists discovered that 'You' are more beautiful than the moon",
-    "I knew this since the 3rd Grade ❤❤❤",
-  ],
-  [
-    "Some people call this planet 'Their World', mine will always be you✨✨",
-    "According to a greek philosophy, this world would have started to face extinction, had we not started dating (I strongly believe in this)",
-  ],
+  ["Name", "Function"],
+  ["Name", "Function"],
+  ["Name", "Function"],
 ];
 const size_text = ["(~ 5,000 km)", "(~ 6,500 km)", "(~ 10,000 km)"];
 let i = 0;
@@ -740,7 +731,7 @@ for (const data of planetData) {
 
   const sizeSprite = createTextSprite(
     // `Size: ${data.radius} units`,
-    `Diameter : ${size_text[i]}`,
+    `STELLAR CREW`,
     position
       .clone()
       .add(new THREE.Vector3(0, data.radius + dist_sizeSprite[i], 0)),
