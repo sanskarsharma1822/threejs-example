@@ -685,8 +685,8 @@ const planetData = [
   { name: "Earth", radius: 6.4, texture: "avatar-3.png", speed: 0.0125 },
 ];
 
-const dist_nameSprite = [15, 15, 15];
-const dist_textSprite = [15, 15, 15];
+const dist_nameSprite = [10, 10, 10];
+const dist_textSprite = [10, 10, 10];
 const dist_sizeSprite = [2, 2, 2];
 const font_name = [24, 24, 24];
 const font_text = [18, 18, 18];
@@ -715,6 +715,7 @@ for (const data of planetData) {
     new THREE.PlaneGeometry(20, 20),
     new THREE.MeshStandardMaterial({
       map: planetTexture,
+      side: THREE.DoubleSide,
     })
   );
   planet.position.copy(position);
