@@ -721,7 +721,7 @@ for (const data of planetData) {
   scene.add(planet);
 
   const nameSprite = createTextSprite(
-    data.name,
+    "STELLAR CREW",
     position
       .clone()
       .add(new THREE.Vector3(0, data.radius + dist_nameSprite[i], 0)),
@@ -729,15 +729,15 @@ for (const data of planetData) {
   );
   scene.add(nameSprite);
 
-  const sizeSprite = createTextSprite(
-    // `Size: ${data.radius} units`,
-    `STELLAR CREW`,
-    position
-      .clone()
-      .add(new THREE.Vector3(0, data.radius + dist_sizeSprite[i], 0)),
-    font_size[i]
-  );
-  scene.add(sizeSprite);
+  // const sizeSprite = createTextSprite(
+  //   // `Size: ${data.radius} units`,
+  //   `STELLAR CREW`,
+  //   position
+  //     .clone()
+  //     .add(new THREE.Vector3(0, data.radius + dist_sizeSprite[i], 0)),
+  //   font_size[i]
+  // );
+  // scene.add(sizeSprite);
 
   let space_text = 0;
   text_text[i].forEach((one_text) => {
